@@ -1,0 +1,9 @@
+<div>
+  <div style="width:50%">
+    <input class="form-control" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" (change)="onFileSelect($event)" />
+    <div *ngIf="loading" class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated  " [ngClass]="{'progress-bar-animated bg-success':animation }" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0"
+        aria-valuemax="100">{{status}}</div> 
+    </div>
+  </div>
+</div>

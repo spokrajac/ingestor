@@ -1,0 +1,53 @@
+.option-dialog-wraper {
+  box-sizing: content-box;
+  padding: 25px;
+}
+
+.md-dialog-actions {
+  float: right;
+}
+
+.title {
+  font-size: 20px;
+  font-family: Titillium-Web-SemiBold, 'Helvetica Neue', sans-serif !important;
+}
+
+.content {
+  font-size: 20px;
+  &.bold {
+    font-family: Titillium-Web-SemiBold, 'Helvetica Neue', sans-serif !important;
+  }
+}
+
+.action-button {
+  width: 100%;
+  text-align: right;
+  margin: 0px;
+  margin-top: 25px;
+  .btn {
+    padding: 0px;
+    margin: 0px!important;
+    &.btn-cancel{
+      margin-right: 10px!important;
+    }
+    
+  }
+  .btn-save {
+    &.btn-temp {
+      float: left;
+    }
+  }
+}
+
+.mat-dialog-actions:last-child {
+  margin: 0px;
+}
+
+:host /deep/ .btn-temp .mat-button-wrapper {
+  padding: 5px;
+}
+
+.noSave{
+  float:right!important;
+}
+
